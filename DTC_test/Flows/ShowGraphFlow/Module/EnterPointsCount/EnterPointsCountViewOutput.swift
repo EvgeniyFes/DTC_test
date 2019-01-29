@@ -6,4 +6,6 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+protocol EnterPointsCountViewOutput: Presentable {
+    var onGraphScreen: EnterPointsCountCompletionBlock? { get set }
+}

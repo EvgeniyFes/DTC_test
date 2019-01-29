@@ -6,4 +6,7 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+protocol Coordinatable: class {
+    var finishFlow: EmptyBlock? { get set }
+    func start()
+}

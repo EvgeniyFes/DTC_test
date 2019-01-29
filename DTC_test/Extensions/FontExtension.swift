@@ -6,4 +6,9 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+extension UIFont {
+
+    class func enterCodeButtonFont() -> UIFont {
+        return UIFont.boldSystemFont(ofSize: 17.0)
+    }
+}

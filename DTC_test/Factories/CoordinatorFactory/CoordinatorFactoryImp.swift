@@ -6,4 +6,9 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+final class CoordinatorFactoryImp: CoordinatorFactory {
+
+    func makeShowGraphCoordinator(router: Router) -> Coordinatable {
+        return ShowGraphCoordinator(router: router, factory: ModuleFactoryImp(), provider: Dependencies.sharedDependencies.provider)
+    }
+}

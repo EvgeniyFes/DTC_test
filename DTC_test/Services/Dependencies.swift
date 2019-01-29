@@ -6,4 +6,14 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+class Dependencies {
+
+    static let sharedDependencies = Dependencies()
+    
+    let provider: MoyaProvider<APIProvider>
+
+    private init() {
+        provider = MoyaProvider<APIProvider>()
+    }
+
+}

@@ -6,4 +6,13 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+protocol ViewPresentable {
+    func toPresent() -> UIView?
+}
+
+extension UIView: ViewPresentable {
+
+    func toPresent() -> UIView? {
+        return self
+    }
+}

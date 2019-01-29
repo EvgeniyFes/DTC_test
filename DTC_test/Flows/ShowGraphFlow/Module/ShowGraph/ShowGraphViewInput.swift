@@ -6,4 +6,8 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+protocol ShowGraphViewInput {
+    var viewModel: ShowGraphViewModel! { get set }
+
+    func saveGraphToGallery()
+}

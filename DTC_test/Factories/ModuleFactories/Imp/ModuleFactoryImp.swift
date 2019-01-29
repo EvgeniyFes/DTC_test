@@ -6,4 +6,13 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+final class ModuleFactoryImp: ModuleFactoryList {
+
+    func makeEnterPointsCountModule() -> EnterPointsCountViewInput & EnterPointsCountViewOutput {
+        return EnterPointsCountViewController.controllerFromStoryboard(.showGraph)
+    }
+
+    func makeShowGraphModule() -> ShowGraphViewInput & ShowGraphViewOutput {
+        return ShowGraphViewController.controllerFromStoryboard(.showGraph)
+    }
+}

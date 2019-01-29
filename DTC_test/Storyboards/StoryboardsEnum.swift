@@ -6,4 +6,7 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+enum Storyboards: String {
+    case main = "Main"
+    case showGraph = "ShowGraph"
+}

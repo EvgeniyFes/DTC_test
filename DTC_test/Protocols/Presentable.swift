@@ -6,4 +6,13 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+protocol Presentable {
+    func toPresent() -> UIViewController?
+}
+
+extension UIViewController: Presentable {
+
+    func toPresent() -> UIViewController? {
+        return self
+    }
+}

@@ -6,4 +6,9 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+protocol ShowGraphModuleFactory {
+
+    func makeEnterPointsCountModule() -> EnterPointsCountViewInput & EnterPointsCountViewOutput
+    
+    func makeShowGraphModule() -> ShowGraphViewInput & ShowGraphViewOutput
+}

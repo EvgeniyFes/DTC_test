@@ -6,8 +6,8 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-#ifndef DTC_test_Bridging_Header_h
-#define DTC_test_Bridging_Header_h
-
-
-#endif /* DTC_test_Bridging_Header_h */
+@import UIKit;
+@import RxSwift;
+@import RxCocoa;
+@import Moya;
+@import SnapKit;

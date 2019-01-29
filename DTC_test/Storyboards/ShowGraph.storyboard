@@ -1,7 +1,96 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Enter Points Count View Controller-->
+        <scene sceneID="NMp-TY-e9Y">
+            <objects>
+                <viewController storyboardIdentifier="EnterPointsCountViewController" id="zap-pQ-plQ" customClass="EnterPointsCountViewController" customModule="DTC_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bzi-ZH-Izd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfv-UV-90e">
+                                <rect key="frame" x="20" y="100" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RpW-kN-pnt">
+                                <rect key="frame" x="20" y="126.5" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23c-uJ-x79">
+                                <rect key="frame" x="149.5" y="171.5" width="76" height="38"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3MZ-8n-b7e" firstAttribute="trailing" secondItem="RpW-kN-pnt" secondAttribute="trailing" constant="20" id="0mh-eZ-lsy"/>
+                            <constraint firstItem="3MZ-8n-b7e" firstAttribute="trailing" secondItem="Dfv-UV-90e" secondAttribute="trailing" constant="20" id="AHB-fS-EGh"/>
+                            <constraint firstItem="RpW-kN-pnt" firstAttribute="leading" secondItem="3MZ-8n-b7e" secondAttribute="leading" constant="20" id="EpH-q6-V0v"/>
+                            <constraint firstItem="23c-uJ-x79" firstAttribute="centerX" secondItem="bzi-ZH-Izd" secondAttribute="centerX" id="K4s-sx-ViO"/>
+                            <constraint firstItem="Dfv-UV-90e" firstAttribute="leading" secondItem="3MZ-8n-b7e" secondAttribute="leading" constant="20" id="PMf-J1-uqr"/>
+                            <constraint firstItem="Dfv-UV-90e" firstAttribute="top" secondItem="3MZ-8n-b7e" secondAttribute="top" constant="80" id="Wyi-1F-P9X"/>
+                            <constraint firstItem="23c-uJ-x79" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3MZ-8n-b7e" secondAttribute="leading" constant="20" id="cYl-pi-vig"/>
+                            <constraint firstItem="23c-uJ-x79" firstAttribute="top" secondItem="RpW-kN-pnt" secondAttribute="bottom" constant="15" id="hIu-2r-mNi"/>
+                            <constraint firstItem="RpW-kN-pnt" firstAttribute="top" secondItem="Dfv-UV-90e" secondAttribute="bottom" constant="6" id="yYj-YD-sTO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3MZ-8n-b7e"/>
+                    </view>
+                    <connections>
+                        <outlet property="countTextField" destination="RpW-kN-pnt" id="CV1-ZW-e2f"/>
+                        <outlet property="enterCountLabel" destination="Dfv-UV-90e" id="Tgr-YJ-uZB"/>
+                        <outlet property="runButton" destination="23c-uJ-x79" id="Zn8-vU-Juv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKY-uA-2NW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="26"/>
+        </scene>
+        <!--Show Graph View Controller-->
+        <scene sceneID="Kmf-me-8ee">
+            <objects>
+                <viewController storyboardIdentifier="ShowGraphViewController" id="4bp-TW-49x" customClass="ShowGraphViewController" customModule="DTC_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ev1-sZ-a2f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LH8-kM-Fjy" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="80" width="335" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="F95-HW-HYA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LH8-kM-Fjy" firstAttribute="top" secondItem="EqV-e3-fVr" secondAttribute="top" constant="60" id="Loc-qq-eeN"/>
+                            <constraint firstItem="LH8-kM-Fjy" firstAttribute="leading" secondItem="EqV-e3-fVr" secondAttribute="leading" constant="20" id="gOG-TM-9VZ"/>
+                            <constraint firstItem="EqV-e3-fVr" firstAttribute="trailing" secondItem="LH8-kM-Fjy" secondAttribute="trailing" constant="20" id="umY-wV-GIC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EqV-e3-fVr"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="LH8-kM-Fjy" id="rKr-df-MvN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cI-ZH-fet" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="26"/>
+        </scene>
+    </scenes>
 </document>

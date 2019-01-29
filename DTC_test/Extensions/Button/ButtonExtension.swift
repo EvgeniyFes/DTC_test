@@ -6,4 +6,15 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+extension UIButton {
+
+    func applyEnterPointsCountDesign() {
+        self.setTitleColor(.white, for: .normal)
+        self.titleLabel?.font = .enterCodeButtonFont()
+
+        self.clipsToBounds = true
+
+        self.backgroundColor = .blue
+        self.layer.cornerRadius = 5.0
+    }
+}

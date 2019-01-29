@@ -6,4 +6,22 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+final class LanguageController {
+
+    static let sharedInstance = LanguageController()
+
+    func localizedString(for key: String?) -> String {
+        guard let key = key else { return "" }
+        if key == "" { return "" }
+
+        return NSLocalizedString(key, comment: "")
+    }
+}
+
+extension String {
+
+    var localized: String {
+        return LanguageController.sharedInstance.localizedString(for: self)
+    }
+
+}

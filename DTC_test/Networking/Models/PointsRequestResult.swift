@@ -6,4 +6,7 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+enum PoinsRequestResult {
+    case success(points: [PointModelProtocol])
+    case failure(message: String)
+}

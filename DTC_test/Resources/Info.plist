@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Add access to save screenschots to gallery</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Add access to save screenschots to gallery</string>
 </dict>
 </plist>

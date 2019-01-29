@@ -5,3 +5,25 @@
   Created by Evgeniy Fes on 26/01/2019.
   Copyright © 2019 Test. All rights reserved.
 */
+
+// Common
+
+"Error.Title" = "Error";
+"Success.Title" = "Success";
+"OK.Button.Title" = "OK";
+
+// Response error
+
+"Response.Error.InvalidateParam" = "Invalidate parameter";
+"Response.Error.Title" = "Server error";
+
+// EnterPointsCountViewController
+
+"EnterPointsCountViewController.EnterCount.Title" = "Enter points count";
+"EnterPointsCountViewController.InvalidCount" = "Enter valid count (count must be more than 0)";
+
+"EnterPointsCountViewController.RunButton.Title" = "RUN";
+
+// ShowGraphViewController
+
+"ShowGraphViewController.ImageSaved.Message" = "Image saved";

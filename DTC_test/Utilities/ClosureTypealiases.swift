@@ -6,4 +6,12 @@
 //  Copyright © 2019 Test. All rights reserved.
 //
 
-import Foundation
+typealias EmptyBlock = () -> Void
+
+typealias EnterPointsCountBlock = (PointsFlowModelProtocol?, String?) -> Void
+
+typealias EnterPointsCountCompletionBlock = (PointsFlowModelProtocol) -> Void
+
+typealias NavigationViewHandler = (_ type: NavigationButtonType) -> Void
+
+typealias SaveImageHandler = (UIImage?) -> Void
